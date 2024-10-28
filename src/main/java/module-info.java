@@ -8,6 +8,6 @@ module com.example.setsnreps {
     requires eu.hansolo.tilesfx;
     requires java.sql;
 
-    opens com.example.setsnreps to javafx.fxml;
-    exports com.example.setsnreps;
+    opens io.github.khoimanos to javafx.fxml;
+    exports io.github.khoimanos;
 }
