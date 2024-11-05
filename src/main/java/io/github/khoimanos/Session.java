@@ -1,21 +1,32 @@
 package io.github.khoimanos;
 
 public class Session {
-        private String chestflys;
-        private String bench;
-        private String tricepsPush;
-        private String lateralRaises;
+    private String excersizeOne;
+    private String excersizeTwo;
+    private String excersizeThree;
+    private String excersizeFour;
 
-        public Session(String chestflys, String bench, String tricepsPush, String lateralRaises) {
-            this.chestflys = chestflys;
-            this.bench = bench;
-            this.tricepsPush = tricepsPush;
-            this.lateralRaises = lateralRaises;
-        }
-
-        // Getter-Methoden für die Eigenschaften
-        public String getChestflys() { return chestflys; }
-        public String getBench() { return bench; }
-        public String getTricepsPush() { return tricepsPush; }
-        public String getLateralRaises() { return lateralRaises; }
+    public Session(String excersizeOne, String excersizeTwo, String excersizeThree, String excersizeFour) {
+        this.excersizeOne = excersizeOne;
+        this.excersizeTwo = excersizeTwo;
+        this.excersizeThree = excersizeThree;
+        this.excersizeFour = excersizeFour;
     }
+
+    public String getExcersizeOne() {
+        return excersizeOne;
+    }
+
+    public String getExcersizeTwo() {
+        return excersizeTwo;
+    }
+
+    public String getExcersizeThree() {
+        return excersizeThree;
+    }
+
+    public String getExcersizeFour() {
+        return excersizeFour;
+    }
+
+}

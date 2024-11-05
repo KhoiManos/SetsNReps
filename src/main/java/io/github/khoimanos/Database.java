@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class Database {
     public static Connection connect() {
-        String url = "jdbc:sqlite:workout_tracker.db"; // creates or opens a database file named `workout_tracker.db`
+        String url = "jdbc:sqlite:workout_racker.db"; // creates or opens a database file named `workout_tracker.db`
         Connection conn = null;
 
         try {
@@ -33,7 +33,7 @@ public class Database {
                 "id INTEGER PRIMARY KEY, " +
                 "musclePullUps REAL, " +
                 "preacherCurls REAL, " +
-                "cableRow REAL, " +
+                "facePull REAL, " +
                 "reverseCurls REAL)";
 
         String createLegsTable = "CREATE TABLE IF NOT EXISTS legs_sessions (" +

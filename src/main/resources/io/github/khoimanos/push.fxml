@@ -27,7 +27,7 @@
                      <children>
                         <TextField fx:id= "textOne" promptText="Weight x Reps" />
                         <TextField fx:id= "textTwo" promptText="Weight x Reps" />
-                        <TextField fx:id= "textThree" alignment="TOP_LEFT" promptText="Weight x Reps" />
+                        <TextField fx:id= "textThree" promptText="Weight x Reps" />
                         <TextField fx:id= "textFour" promptText="Weight x Reps" />
                      </children>
                   </HBox>
@@ -39,7 +39,7 @@
             <TableView fx:id="tableView" layoutX="10.0" layoutY="7.0" prefHeight="232.0" prefWidth="451.0">
               <columns>
                 <TableColumn fx:id= "flyCol" prefWidth="75.0" text="Chestflys" />
-                <TableColumn  fx:id= "benchCol" prefWidth="75.0" sortType="DESCENDING" text="Bench" />
+                <TableColumn  fx:id= "benchCol" prefWidth="75.0" sortType="DESCENDING" text="Inc Bench" />
                   <TableColumn  fx:id= "tricepsCol" prefWidth="75.0" text="TricepsPush" />
                   <TableColumn  fx:id= "lateralCol" prefWidth="75.0" text="LateralRaises" />
               </columns>

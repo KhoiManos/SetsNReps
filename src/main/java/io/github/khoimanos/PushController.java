@@ -35,10 +35,10 @@ public class PushController {
 
 
     public void initialize() {
-        flyCol.setCellValueFactory(new PropertyValueFactory<>("chestflys"));
-        benchCol.setCellValueFactory(new PropertyValueFactory<>("bench"));
-        tricepsCol.setCellValueFactory(new PropertyValueFactory<>("triceps"));
-        lateralCol.setCellValueFactory(new PropertyValueFactory<>("lateralRaises"));
+        flyCol.setCellValueFactory(new PropertyValueFactory<>("excersizeOne"));
+        benchCol.setCellValueFactory(new PropertyValueFactory<>("excersizeTwo"));
+        tricepsCol.setCellValueFactory(new PropertyValueFactory<>("excersizeThree"));
+        lateralCol.setCellValueFactory(new PropertyValueFactory<>("excersizeFour"));
         tableView.setItems(getSessionData());
     }
 
@@ -56,6 +56,7 @@ public class PushController {
                             rs.getString("bench"),
                             rs.getString("triceps"),
                             rs.getString("lateralRaises")));
+
                 }
 
         } catch (SQLException e) {
@@ -82,6 +83,7 @@ public class PushController {
                 preparedStatement.setString(2, two);
                 preparedStatement.setString(3, three);
                 preparedStatement.setString(4, four);
+
 
                 // Execute the insert command
                 preparedStatement.executeUpdate();
